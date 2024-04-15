@@ -1,0 +1,112 @@
+.sidenav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(7, 39, 146);
+    width: 220px;
+    height: 100vh;
+
+    text-align: center;
+}
+
+ul {
+    margin-top: 30px;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.profile {
+    margin-left: -10px;
+}
+
+ul li {  font-family: "Secular One", sans-serif;
+    display: flex;
+    list-style: none;
+    margin: 5px 4px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+ul li:hover {
+    background-color: #fff;
+    color: black;
+    border-radius: 10px #fff;
+}
+
+mat-icon {
+    margin-left: -6px;
+    font-size: 2rem;width: auto;
+    height: auto;
+}
+
+.assigment-icon {
+    font-size: 2.5rem;
+    width: auto;
+    height: auto;
+}
+
+.assigment {
+    text-align: start;
+
+}
+
+.dashboard-icon {
+    margin-left: -5px;
+}
+
+.dashboard-span {
+    margin-left: 15px;
+}
+
+.profile-icon {
+    margin-left: -15px;
+}
+
+.profile_span {
+    margin-left: 15px;
+}
+
+.work-icon {
+    margin-left: -4px;
+}
+
+.work-span {
+    margin-left: 10px;
+}
+
+.bookmark-span {
+    margin-left: 10px;
+}
+
+.bookmark-icon {
+    margin-left: -4px;
+}
+
+.settings-span {
+    margin-left: 10px;
+}
+
+.settings-icon {
+    margin-left: -6px;
+}
+
+.main {
+    display: flex;
+}
+
+.ex1 {
+    width: 200px;
+}
+
+.ex2 {
+    width: 150px;
+}
+
+span {
+    font-family: "Secular One", sans-serif;
+}

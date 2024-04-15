@@ -1,0 +1,19 @@
+<div class="main">
+    <h1 mat-card-title>This is Information </h1>
+
+        <app-carts-form></app-carts-form>
+
+    <div class="flex_item-1">
+        <ng-container *ngFor=" let cart of cartes; let i=index"  > <app-notifications [texts1]="cart.titls" [texts2]="cart.cardtexts"
+             [texts3]="cart.cardstexts" [texts4]="cart.footertexts"></app-notifications>
+      
+        </ng-container>
+       
+        
+    </div>
+    <!-- <div class="flex_item-2">
+        <ng-container *ngFor=" let cart of cartes; let i=index"  > <app-notifications [texts1]="cart.titls" [texts2]="cart.cardtexts"
+            [texts3]="cart.cardstexts" [texts4]="cart.footertexts"></app-notifications>
+     
+       </ng-container> </div> -->
+</div>

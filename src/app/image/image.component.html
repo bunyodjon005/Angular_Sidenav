@@ -1,0 +1,7 @@
+<div [style.width]="ImageWidth()+'px'" class="container_img">
+    <img  [height]="ImageHeight()" [width]="ImageWidth()" [src]="imageSource()">
+    <input #InputField type="file" hidden (change)="fileSelected($event)" (click)="InputField.value=''">
+    <button mat-mini-fab color="pink" (click)="InputField.click()" aria-label="Example icon button with a plus one icon">
+        <mat-icon>drive_folder_upload</mat-icon>
+      </button>
+   </div>

@@ -1,0 +1,19 @@
+<form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Favorite food</mat-label>
+      <input matInput placeholder="Type cart title... "  #titls>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Favorite food</mat-label>
+        <input matInput placeholder="Type cart title... " #cardtexts>
+      </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label>Leave a comment</mat-label>
+      <input matInput placeholder="Type cart title... " #cardstexts>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Leave a comment</mat-label>
+        <textarea matInput placeholder="Cart descrition..."  #footertexts></textarea>
+      </mat-form-field>
+     
+    <button mat-raised-button color="primary" type="button" (click)="addCart(titls.value,cardtexts.value,cardstexts.value,footertexts.value)">Add</button>

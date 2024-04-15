@@ -1,0 +1,23 @@
+<mat-sidenav-container><mat-sidenav  #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="'push'" [opened]="false"><div  color="primary"  [ngClass]="{'ex2':Expend1}" class="sidenav">
+ 
+    <ul>
+        <li (click)="toggleSidebar()" class="assigment"><mat-icon class="assigment-icon">assignment_ind</mat-icon></li>
+        <li routerLink="dashboard"  class="dashboard"><mat-icon class="dashboard-icon">dashboard</mat-icon> <span [ngStyle]="{'display': sidebarVisible ? 'block' : 'none'}" class="dashboard-span">Dashboard</span></li>
+        <li routerLink="/profile" class="profile"><mat-icon class="profile-icon">account_circle</mat-icon> <span [ngStyle]="{'display': sidebarVisible ? 'block' : 'none'}" class="profile_span">Profile</span></li>
+        <li class="work"><mat-icon class="work-icon">work</mat-icon> <span [ngStyle]="{'display': sidebarVisible ? 'block' : 'none'}" class="work-span">Joob food</span></li>
+        <li class="bookmark"><mat-icon class="bookmark-icon">bookmark</mat-icon> <span [ngStyle]="{'display': sidebarVisible ? 'block' : 'none'}" class="bookmark-span">Save Jobs</span></li>
+        <li class="settings"><mat-icon class="settings-icon">settings</mat-icon> <span [ngStyle]="{'display': sidebarVisible ? 'block' : 'none'}" class="settings-span">Settings</span></li>
+    </ul>
+</div></mat-sidenav>
+<mat-sidenav-content>
+    <mat-toolbar color="primary">
+        <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
+          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+        <span>Projects Amaliyot</span>
+      </mat-toolbar>
+
+ <router-outlet></router-outlet>
+</mat-sidenav-content>
+</mat-sidenav-container>

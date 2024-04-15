@@ -1,0 +1,73 @@
+
+<div class="main">
+    <div class="contents"><div class="sidenav_profile">
+        <ul>
+            <li  (click)="EditProfil()"><mat-icon>edit</mat-icon> <span>Edit Profile</span> </li>
+            <li routerLink=""><mat-icon>notifications_active</mat-icon> <span>Notifications</span></li>
+            <li> <mat-icon>satellite_alt</mat-icon> <span>Choose Plan</span></li>
+            <li> <mat-icon>verified_user</mat-icon> <span>Password & Security</span></li>
+        </ul>
+    </div>
+<div *ngIf="edits" class="edit_profils">
+    <div class="edits"> <h1 class="edit_title" mat-card-title>Edit Profile</h1>
+   <app-image [width]="200" [height]="200"></app-image>
+   
+   <form [formGroup]="Userregisters">
+    <div class="firstlast"> <div class="firstname">
+    <label for="">Firstname</label>
+    <input type="text"  formControlName="firstname" required  placeholder="firstname">
+    <div *ngIf="firstname?.touched && firstname?.invalid">
+        <div *ngIf="firstname?.errors?.['required']">kiritish majburiy</div>
+        <div *ngIf="firstname?.errors?.['minlength']">Eng kamida 6 ta so'z!</div>
+        <div *ngIf="firstname?.errors?.['maxlength']">Eng ko'p bilan 18ta bo'lsin </div>
+    </div>
+   </div>
+<div class="lastname">
+    <label for="">Lastname</label>
+    <input type="text" placeholder="lastname" formControlName="lastname">
+    <div *ngIf="lastname?.touched && lastname?.invalid">
+        <div *ngIf="lastname?.errors?.['required']">Kiritish majburiy</div>
+        <div *ngIf="lastname?.errors?.['minlength']"> eng kamida 3 ta kiritilsin</div>
+        <div *ngIf="lastname?.errors?.['maxlength']">Eng ko'p bilan 12</div>
+    </div>
+</div>
+</div><div class="email">
+    <label for="">Email</label>
+    <input placeholder="email" type="text">
+    <div></div>
+    
+</div>
+<div class="email">
+    <label for="">Contact Number</label>
+    <input placeholder="Contact Number" type="number">
+</div>
+<div class="firstlast"> <div class="firstname">
+    <label for="">City</label>
+    <input type="text">
+   </div>
+<div class="lastname">
+    <label for="">First Last</label>
+    <input type="text" placeholder="first last">
+</div>
+</div>
+<div class="firstlast"> <div class="firstname">
+    <label for="">Zip code</label>
+    <input type="text">
+   </div>
+<div class="lastname">
+    <label for="">Country</label>
+    <input type="text">
+</div>
+</div>
+<div class="email ">
+    <label for="">Password</label>
+    <input type="password">
+</div>
+  <button  mat-raised-button color="primary">Submit</button>
+   </form></div>
+</div>
+</div>
+    
+
+
+</div> 
