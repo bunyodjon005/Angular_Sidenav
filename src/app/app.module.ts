@@ -18,6 +18,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DasbhoardComponent } from './dasbhoard/dasbhoard.component';
 import { CartsFormComponent } from './carts-form/carts-form.component';
 import { CommonModule } from '@angular/common';
+import { WeatherComponent } from './weather/weather.component';
+import { DollarComponent } from './dollar/dollar.component';
 
 
 @NgModule({
@@ -31,6 +33,8 @@ import { CommonModule } from '@angular/common';
     NotificationsComponent,
     DasbhoardComponent,
     CartsFormComponent,
+    WeatherComponent,
+    DollarComponent,
 
   ],
   imports: [

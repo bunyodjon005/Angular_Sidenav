@@ -8,7 +8,9 @@
         <li class="work"><mat-icon class="work-icon">work</mat-icon> <span [ngStyle]="{'display': sidebarVisible ? 'block' : 'none'}" class="work-span">Joob food</span></li>
         <li class="bookmark"><mat-icon class="bookmark-icon">bookmark</mat-icon> <span [ngStyle]="{'display': sidebarVisible ? 'block' : 'none'}" class="bookmark-span">Save Jobs</span></li>
         <li class="settings"><mat-icon class="settings-icon">settings</mat-icon> <span [ngStyle]="{'display': sidebarVisible ? 'block' : 'none'}" class="settings-span">Settings</span></li>
-    </ul>
+        <li routerLink="weather" class="settings"> <mat-icon class="settings-icon">sunny</mat-icon><span [ngStyle]="{'display': sidebarVisible ? 'block' : 'none'}" class="settings-span"> weather</span></li>
+        <li routerLink="dollar" class="settings"><mat-icon  class="settings-icon">swap_horiz</mat-icon><span [ngStyle]="{'display': sidebarVisible ? 'block' : 'none'}">Dolar To UZs</span></li>
+      </ul>
 </div></mat-sidenav>
 <mat-sidenav-content>
     <mat-toolbar color="primary">

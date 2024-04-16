@@ -4,6 +4,8 @@ import { MyprofileComponent } from './myprofile/myprofile.component';
 import { ModalImg2Component } from './modal-img-2/modal-img-2.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { DasbhoardComponent } from './dasbhoard/dasbhoard.component';
+import { WeatherComponent } from './weather/weather.component';
+import { DollarComponent } from './dollar/dollar.component';
 
 
 const routes: Routes = [
@@ -11,7 +13,9 @@ const routes: Routes = [
   // {path:'editprofil',component:EditprofileComponent}
   {path:'modal2',component:ModalImg2Component},
   {path:'notif',component:NotificationsComponent},
-  {path:'dashboard',component:DasbhoardComponent}
+  {path:'dashboard',component:DasbhoardComponent},
+  {path:'weather',component:WeatherComponent},
+  {path:'dollar',component:DollarComponent}
 ];
 
 @NgModule({

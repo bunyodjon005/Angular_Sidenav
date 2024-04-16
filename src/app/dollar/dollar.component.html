@@ -1,0 +1,7 @@
+<div>
+    <h2>Dollar to uzs converter</h2>
+    <input type="number" [(ngModel)]="usdAmount">
+    <button (click)="convert()">Convert</button>
+    <p *ngIf="usdToUZSRate">1 usd {{usdToUZSRate}}</p>
+    <p *ngIf="uzdAmount">1 usd {{uzdAmount}}</p>
+</div>
